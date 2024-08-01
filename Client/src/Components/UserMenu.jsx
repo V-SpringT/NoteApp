@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Avatar, Menu, MenuItem, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useContext } from 'react';
@@ -6,7 +7,7 @@ import { AuthContext } from '../Context/AuthProvider';
 
 export default function UserMenu() {
   const {
-    user: { displayName, photoURL, auth },
+    user: { displayName, photoURL, auth }
   } = useContext(AuthContext);
   const [anchorEl, setAnchorEl] = useState(null);
 

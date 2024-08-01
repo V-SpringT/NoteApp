@@ -1,15 +1,17 @@
+/* eslint-disable no-unused-vars */
 import { Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import { Outlet, useLoaderData } from 'react-router-dom';
+import UserMenu from '../Components/UserMenu'
 // import FolderList from '../components/FolderList';
 // import PushNotification from '../components/PushNotification';
-// import UserMenu from '../components/UserMenu';
+
 
 export default function Home() {
 //   const { folders } = useLoaderData();
 
-  // console.log('[HomePage]',{data});
+//   console.log('[HomePage]',{data});
 
   return (
     <>
@@ -17,8 +19,8 @@ export default function Home() {
         Note App
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'right', mb: '10px' }}>
-        {/* <UserMenu />
-        <PushNotification /> */}
+        <UserMenu />
+        {/* <PushNotification /> */}
       </Box>
 
       <Grid
